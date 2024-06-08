@@ -24,7 +24,7 @@ app.post('/webhook', (req, res) => {
 });
 
 function forwardToTawkTo(message) {
-  const TAWK_TO_API_URL = 'https://api.tawk.to/your-api-endpoint';
+  const TAWK_TO_API_URL = 'https://api.tawk.to/chat';
   const TAWK_TO_API_KEY = 'YOUR_TAWK_TO_API_KEY';
 
   axios.post(TAWK_TO_API_URL, { message }, {
